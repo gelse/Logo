@@ -33,38 +33,37 @@
       />
 
     <use x="5" y="5"
-      href="#part0" fill="#999"
+      href="#part0" fill="#666"
       />
 
     <use x="5" y="5" 
-      href="#part1" fill="#999" 
-      paint-order="stroke fill" transform="scale(-1 1)" 
-      transform-origin="15.5 10.5" >
-      <animateTransform
+      href="#part1" fill="#666" 
+      paint-order="stroke fill" transform="rotate(180 0 0.5)" 
+      transform-origin="15.5 10.5">
+      <animateTransform 
         attributeName="transform"
         attributeType="XML"
-        type="scale"
-        from="-1 1"
-        to="1 1"
+        type="rotate"
+        from="-180 0 0.5"
+        to="0 0 0.5"
         dur="1s"
         fill="freeze"
-      />
+        repeatCOunt="1"/>
     </use>
 
     <use x="5" y="5" 
-      href="#part2" fill="#999" 
-      paint-order="stroke fill" transform="scale(1 -1)" 
+      href="#part2" fill="#666" 
+      paint-order="stroke fill" transform="rotate(0 9.5 0)" 
       transform-origin="10.5 15.5" >
-      <animateTransform
+      <animateTransform 
         attributeName="transform"
         attributeType="XML"
-        type="scale"
-        from="1 -1"
-        to="1 1"
+        type="rotate"
+        from="180 9.5 0"
+        to="0 9.5 0"
         dur="1s"
         fill="freeze"
-        begin="1s"
-      />
+        repeatCOunt="1"/>
     </use>
 
 
