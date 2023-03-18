@@ -17,28 +17,27 @@
       filter="url(#f1)" opacity="0">
       <animate attributeType="XML"
         attributeName="opacity"
-        from="0" to="1"
-        dur="1s"
-        repeatDur="indefinite"  
-        fill="freeze"
+        repeatCount="indefinite"
+        begin="2"
         calcMode="spline"
-        keyTimes="0;1"
-        keySplines="0.42 0 1 1"
-        begin="2; reset.end + 1s" />
+        dur="3s"
+        values="0;1;0"
+        keyTimes="0;0.5;1"
+        keySplines="0.5 0 0.5 1; 0.5 0 0.5 1"
+        />
       </use>
 
     <use x="5" y="5" 
       href="#part0" fill="#111" 
-      paint-order="stroke fill" stroke="#999" stroke-width="0.1" 
       />
 
     <use x="5" y="5"
-      href="#part0" fill="#666"
+      href="#part0" fill="#333"
       />
 
     <use x="5" y="5" 
-      href="#part1" fill="#666" 
-      paint-order="stroke fill" transform="rotate(180 0 0.5)" 
+      href="#part1" fill="#333" 
+      transform="rotate(180 0 0.5)" 
       transform-origin="15.5 10.5">
       <animateTransform 
         attributeName="transform"
@@ -52,8 +51,8 @@
     </use>
 
     <use x="5" y="5" 
-      href="#part2" fill="#666" 
-      paint-order="stroke fill" transform="rotate(0 9.5 0)" 
+      href="#part2" fill="#333" 
+      transform="rotate(0 9.5 0)" 
       transform-origin="10.5 15.5" >
       <animateTransform 
         attributeName="transform"
