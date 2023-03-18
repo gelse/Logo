@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="310" 
+  height="310" 
+  style="background-color:black"
+  viewBox="0 0 31 31">
+    <defs>
+        <path id="completelogo" d="M6 0A6 6 90 1012 6L9 6A3 3 0 116 3L6 0M9 6A6 6 90 0015 12 6 6 0 109 6M12 6A3 3 0 1115 9 3 3 0 0112 6M15 12A3 3 0 1112 15L9 15A6 6 0 1015 9Z" />
+       
+        <filter id="f1">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="0.4" />
+        </filter>        
+    </defs>
+    
+    <use x="5" y="5" 
+      href="#completelogo" fill="#999"
+      filter="url(#f1)" opacity="0">
+      <animate attributeType="XML"
+        attributeName="opacity"
+        repeatCount="1"
+        begin="0"
+        calcMode="spline"
+        dur="3s"
+        values="0;1;0"
+        keyTimes="0;0.5;1"
+        keySplines="0.5 0 0.5 1; 0.5 0 0.5 1"
+        />
+      </use>
+
+      <use x="5" y="5" 
+        href="#completelogo" fill="#111" 
+        paint-order="stroke fill" stroke="#999" stroke-width="0.1" opacity="0">
+      <animate attributeType="XML"
+        attributeName="opacity"
+        from="0" to="1"
+        dur="1s"
+        repeatDur="once"
+        fill="freeze"
+        calcMode="spline"
+        keyTimes="0;1"
+        keySplines="0.42 0 1 1"
+        begin="1" />
+      </use>
+
+
+</svg>

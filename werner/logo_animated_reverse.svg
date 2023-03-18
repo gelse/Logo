@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="310"
+  height="310"
+  style="background-color:black"
+  viewBox="0 0 31 31">
+  <defs>
+    <path id="completelogo"
+      d="M6 0A6 6 90 1012 6L9 6A3 3 0 116 3L6 0M9 6A6 6 90 0015 12 6 6 0 109 6M12 6A3 3 0 1115 9 3 3 0 0112 6M15 12A3 3 0 1112 15L9 15A6 6 0 1015 9Z" />
+    <path id="part0" d="M9 6A6 6 90 0015 12 6 6 0 109 6M12 6A3 3 0 1115 9 3 3 0 0112 6Z" />
+    <path id="part1" d="M6 0A6 6 90 1012 6L9 6A3 3 0 116 3L6 0Z" />
+    <path id="part2" d="M15 12A3 3 0 1112 15L9 15A6 6 0 1015 9Z" />
+
+    <filter id="f1">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0.4" />
+    </filter>
+    <filter id="f2">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0.2" />
+    </filter>
+
+  </defs>
+
+  <use x="5" y="5"
+    href="#completelogo" fill="#999"
+    filter="url(#f1)" opacity="0">
+    <animate attributeType="XML"
+      attributeName="opacity"
+      repeatCount="1"
+      begin="0"
+      calcMode="spline"
+      dur="0.5s"
+      values="0;1;0"
+      keyTimes="0;0.25;0.5"
+      keySplines="0.5 0 0.5 1; 0.5 0 0.5 1"
+    />
+  </use>
+
+  <use x="5" y="5"
+    href="#completelogo" fill="#111"
+    paint-order="stroke fill" stroke="#999" stroke-width="0.1" opacity="0">
+    <animate attributeType="XML"
+      attributeName="opacity"
+      from="1" to="0"
+      dur="0.5s"
+      repeatDur="once"
+      fill="freeze"
+      calcMode="spline"
+      keyTimes="0;0.5"
+      keySplines="0.42 0 1 1"
+      begin="0" />
+  </use>
+
+
+  <use x="5" y="5"
+    filter="url(#f2)"
+    href="#part0" fill="#333"
+    opacity="0">
+    <animate attributeType="XML"
+      attributeName="opacity"
+      from="0" to="1"
+      dur="0.5s"
+      repeatDur="once"
+      fill="freeze"
+      calcMode="spline"
+      keyTimes="0;0.5"
+      keySplines="0.42 0 1 1"
+      begin="0" />
+      <animate attributeType="XML"
+      attributeName="opacity"
+      from="1" to="0"
+      dur="0.5s"
+      repeatDur="once"
+      fill="freeze"
+      calcMode="spline"
+      keyTimes="0;0.5"
+      keySplines="0.42 0 1 1"
+      begin="1" />
+  </use>
+
+  <use x="5" y="5"
+    href="#part1" fill="#333"
+    filter="url(#f2)"
+    transform="rotate(0 0 0.5)"
+    transform-origin="15.5 10.5">
+    <animate attributeType="XML"
+      attributeName="opacity"
+      from="0" to="1"
+      dur="0.5s"
+      repeatDur="once"
+      fill="freeze"
+      calcMode="spline"
+      keyTimes="0;0.5"
+      keySplines="0.42 0 1 1"
+      begin="0" />
+    <animateTransform
+      attributeName="transform"
+      attributeType="XML"
+      type="rotate"
+      from="0 0 0.5"
+      to="-180 0 0.5"
+      dur="0.5s"
+      fill="freeze"
+      repeatCOunt="1"
+      begin="0.5" />
+    <animate attributeType="XML"
+      attributeName="opacity"
+      from="1" to="0"
+      dur="0.5s"
+      repeatDur="once"
+      fill="freeze"
+      calcMode="spline"
+      keyTimes="0;0.5"
+      keySplines="0.42 0 1 1"
+      begin="1" />
+  </use>
+
+  <use x="5" y="5"
+    href="#part2" fill="#333"
+    filter="url(#f2)"
+    transform="rotate(0 9.5 0)"
+    transform-origin="10.5 15.5">
+    <animate attributeType="XML"
+      attributeName="opacity"
+      from="0" to="1"
+      dur="0.5s"
+      repeatDur="once"
+      fill="freeze"
+      calcMode="spline"
+      keyTimes="0;0.5"
+      keySplines="0.42 0 1 1"
+      begin="0" />
+    <animateTransform
+      attributeName="transform"
+      attributeType="XML"
+      type="rotate"
+      from="0 9.5 0"
+      to="180 9.5 0"
+      dur="0.5s"
+      fill="freeze"
+      repeatCOunt="1"
+      begin="0.5"
+    />
+    <animate attributeType="XML"
+      attributeName="opacity"
+      from="1" to="0"
+      dur="0.5s"
+      repeatDur="once"
+      fill="freeze"
+      calcMode="spline"
+      keyTimes="0;0.5" 
+      keySplines="0.42 0 1 1"
+      begin="1" />
+  </use>
+</svg>
