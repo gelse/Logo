@@ -23,7 +23,7 @@
       <animate attributeType="XML"
         attributeName="opacity"
         repeatCount="indefinite"
-        begin="2"
+        begin="1"
         calcMode="spline"
         dur="3s"
         values="0;1;0"
@@ -82,7 +82,7 @@
         calcMode="spline"
         keyTimes="0;1"
         keySplines="0.42 0 1 1"
-        begin="2" />
+        begin="1" />
       </use>
 
 </svg>
